@@ -1,14 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementClickInterceptedException
-
 import time
 import random
 
 comments_ = ["Awesome!!", "Cool!", "Wadhiv!","Love it!!"]
 
-EMAIL = "sidkulkarnimj@gmail.com"
-PASSWORD = "9881823532"
+EMAIL = "your email"
+PASSWORD = "your password"
 
 chrome_driver_path = "F:/chromedriver.exe"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
@@ -46,7 +45,7 @@ search = driver.find_element_by_xpath('//input[@placeholder="Search"]')
 search.click()
 time.sleep(3)
 
-search.send_keys("dev__yogesh")
+search.send_keys("profile name")
 
 count = 0
 while count< 3:
